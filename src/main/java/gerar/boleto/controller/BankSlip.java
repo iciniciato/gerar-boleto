@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/boletos")
-public class Boleto {
+@RequestMapping("/bankslips")
+public class BankSlip {
 
     @GetMapping
-    public ResponseEntity<String> getBoletos() {
+    public ResponseEntity<String> getBankSlips() {
+
         return ResponseEntity.ok().body("ok");
     }
 }
