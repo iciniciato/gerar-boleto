@@ -9,9 +9,10 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
+@Entity(name = "BOLETO")
 public class BoletoEntity {
 
     @Id
