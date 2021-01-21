@@ -5,9 +5,8 @@ Neste readme irei dividir as informações relevantes em tópicos.
 
 <LI><b>Desafio</b><br><UL>
 Construir uma API REST para geração de boletos que será consumido por
-um módulo de um sistema de gestão financeira de microempresas.<br>
-
-Deve ter os seguintes endpoints para:<br>
+um módulo de um sistema de gestão financeira de microempresas. Deve ter os seguintes endpoints para:<br>
+<br>
 ● Criar boleto<br>
 ● Listar boletos<br>
 ● Ver detalhes<br>
