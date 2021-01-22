@@ -1,5 +1,6 @@
 package gerar.boleto.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import gerar.boleto.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +16,16 @@ import java.util.UUID;
 public class BankSlipDTO {
 
     private UUID id;
-    private Date due_date;
-    private BigDecimal total_in_cents;
+
+    @JsonProperty("due_date")
+    private Date dueDate;
+
+    @JsonProperty("total_in_cents")
+    private BigDecimal totalInCents;
+
+    @JsonProperty("customer")
     private String customer;
+
+    @JsonProperty("status")
     private Status status;
 }
