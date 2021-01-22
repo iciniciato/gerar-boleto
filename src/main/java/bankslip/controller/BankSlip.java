@@ -1,9 +1,9 @@
-package gerar.boleto.controller;
+package bankslip.controller;
 
-import gerar.boleto.dto.BankSlipDTO;
-import gerar.boleto.entity.BankSlipEntity;
-import gerar.boleto.repository.BankSlipRepository;
-import gerar.boleto.service.BankSlipService;
+import bankslip.entity.BankSlipEntity;
+import bankslip.repository.BankSlipRepository;
+import bankslip.service.BankSlipService;
+import bankslip.dto.BankSlipDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

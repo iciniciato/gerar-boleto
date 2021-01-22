@@ -1,7 +1,7 @@
-package gerar.boleto.dto;
+package bankslip.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import gerar.boleto.enums.Status;
+import bankslip.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

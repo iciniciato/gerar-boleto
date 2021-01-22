@@ -1,6 +1,6 @@
-package gerar.boleto.repository;
+package bankslip.repository;
 
-import gerar.boleto.entity.BankSlipEntity;
+import bankslip.entity.BankSlipEntity;
 import org.springframework.data.repository.CrudRepository;
 
 public interface BankSlipRepository extends CrudRepository<BankSlipEntity, Long> {

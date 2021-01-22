@@ -1,7 +1,7 @@
-package gerar.boleto.dto.mapper;
+package bankslip.dto.mapper;
 
-import gerar.boleto.dto.BankSlipDTO;
-import gerar.boleto.entity.BankSlipEntity;
+import bankslip.entity.BankSlipEntity;
+import bankslip.dto.BankSlipDTO;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

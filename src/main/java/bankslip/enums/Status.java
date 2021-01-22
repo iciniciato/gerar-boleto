@@ -1,4 +1,4 @@
-package gerar.boleto.enums;
+package bankslip.enums;
 
 public enum Status {
     PENDING, PAID, CANCELED

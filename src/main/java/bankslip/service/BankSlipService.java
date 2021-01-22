@@ -1,9 +1,9 @@
-package gerar.boleto.service;
+package bankslip.service;
 
-import gerar.boleto.dto.BankSlipDTO;
-import gerar.boleto.dto.mapper.BankSlipMapper;
-import gerar.boleto.entity.BankSlipEntity;
-import gerar.boleto.repository.BankSlipRepository;
+import bankslip.repository.BankSlipRepository;
+import bankslip.dto.BankSlipDTO;
+import bankslip.dto.mapper.BankSlipMapper;
+import bankslip.entity.BankSlipEntity;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

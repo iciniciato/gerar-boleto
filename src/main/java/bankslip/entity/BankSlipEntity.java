@@ -1,6 +1,6 @@
-package gerar.boleto.entity;
+package bankslip.entity;
 
-import gerar.boleto.enums.Status;
+import bankslip.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
