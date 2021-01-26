@@ -5,7 +5,9 @@ import bankslip.dto.BankSlipDTO;
 import bankslip.dto.mapper.BankSlipMapper;
 import bankslip.entity.BankSlipEntity;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
@@ -34,5 +36,10 @@ public class BankSlipService {
     public void postBankSlip(BankSlipDTO bankSlipDTO) {
         BankSlipEntity bankSlipEntity = bankSlipMapper.toBankSlipEntity(bankSlipDTO);
         bankSlipRepository.save(bankSlipEntity);
+    }
+
+    public void cancelBankSlip(Long id) {
+        BankSlipEntity bankSlipEntity = bankSlipRepository.findById(id).get();
+        bankSlipRepository.delete(bankSlipEntity);
     }
 }

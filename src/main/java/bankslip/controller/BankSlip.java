@@ -33,9 +33,15 @@ public class BankSlip {
     }
 
     @PostMapping
-    public ResponseEntity postBankSlip(BankSlipDTO bankSlipDTO){
+    public ResponseEntity postBankSlip(@RequestBody BankSlipDTO bankSlipDTO){
         bankSlipService.postBankSlip(bankSlipDTO);
         return ResponseEntity.created(URI.create("/bankslip/" + bankSlipDTO.getId())).build();
+    }
+
+    @DeleteMapping
+    public ResponseEntity cancelBankSlip(@PathVariable Long id){
+        bankSlipService.cancelBankSlip(id);
+        return ResponseEntity.ok().build();
     }
 
 }

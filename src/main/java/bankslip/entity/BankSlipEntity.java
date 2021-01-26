@@ -26,9 +26,9 @@ public class BankSlipEntity {
     private UUID id;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date due_date;
+    private Date dueDate;
 
-    private BigDecimal total_in_cents;
+    private BigDecimal totalInCents;
 
     private String customer;
 
