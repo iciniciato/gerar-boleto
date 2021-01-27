@@ -1,25 +1,20 @@
 package bankslip.controller;
 
 import bankslip.entity.BankSlipEntity;
-import bankslip.repository.BankSlipRepository;
 import bankslip.service.BankSlipService;
 import bankslip.dto.BankSlipDTO;
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
-import java.util.Optional;
 import java.util.UUID;
 
 @AllArgsConstructor
 @RestController
 @RequestMapping("/bankslips")
 public class BankSlip {
-
-    private final BankSlipRepository bankSlipRepository;
 
     private final BankSlipService bankSlipService;
 

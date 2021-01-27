@@ -5,10 +5,7 @@ import bankslip.dto.BankSlipDTO;
 import bankslip.dto.mapper.BankSlipMapper;
 import bankslip.entity.BankSlipEntity;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 import java.util.UUID;
