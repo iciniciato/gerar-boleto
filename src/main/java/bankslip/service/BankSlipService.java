@@ -1,5 +1,6 @@
 package bankslip.service;
 
+import bankslip.enums.Status;
 import bankslip.repository.BankSlipRepository;
 import bankslip.dto.BankSlipDTO;
 import bankslip.dto.mapper.BankSlipMapper;
@@ -34,10 +35,12 @@ public class BankSlipService {
 
     public void postBankSlip(BankSlipDTO bankSlipDTO) {
         BankSlipEntity bankSlipEntity = bankSlipMapper.toBankSlipEntity(bankSlipDTO);
+        bankSlipEntity.setStatus(Status.PENDING);
         bankSlipRepository.save(bankSlipEntity);
     }
 
     public void cancelBankSlip(UUID id) {
+
         bankSlipRepository.deleteById(id);
     }
 }
